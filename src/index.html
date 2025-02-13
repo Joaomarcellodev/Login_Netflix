@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Netflix Tailwind</title>
+  </head>
+  <body class="h-fit w-full bg-no-repeat bg-[url(./assets/fundo_netflix.jpg)]">
+    <div class="bg-black/40 absolute w-full h-fit">
+      <header>
+        <img class="w-60" src="./assets/netflix-logo.png" alt="" />
+      </header>
+
+      <main class="flex items-center justify-center pb-20 ">
+        <section class="bg-black/70 w-4/12 p-14 rounded space-y-8">
+          <h2 class="text-3xl text-white font-bold">Entrar</h2>
+
+          <div class="space-y-4">
+            <input
+              class="w-full placeholder-neutral-300 text-neutral-300 h-12 bg-neutral-700 rounded p-5"
+              placeholder="E-mail ou numero de telefone "
+              type="text"
+            />
+            <input
+              class="w-full placeholder-neutral-300 text-neutral-300 h-12 bg-neutral-700 rounded p-5"
+              placeholder="Senha"
+              type="password"
+            />
+          </div>
+
+          <div class="space-y-2">
+            <button
+              class="bg-red-600 text-white w-full p-3 rounded font-bold hover:bg-red-500 transition duration-300 ease-in-out"
+            >
+              Entrar
+            </button>
+
+            <div class="flex justify-between py-4">
+              <div class="flex items-center">
+                <input
+                  class="w-4 h-4 mr-1"
+                  type="checkbox"
+                  name=""
+                  id="remenber"
+                />
+                <label class="text-neutral-300 text-sm" for="remenber"
+                  >Lembre-se de mim</label
+                >
+              </div>
+
+              <a class="text-neutral-300 text-sm hover:underline" href="#">Precisa de ajuda?</a>
+            </div>
+
+            <div class="space-y-2 pb-12">
+              <p class="text-neutral-400">Novo por aqui? <a class="text-white hover:underline" href="#">Assine aqui</a></p>
+              <p class=" text-sm text-neutral-400">O acesso esta protegido pelo Google reCAPTCHA para garantir que você não é um robô <a class="text-blue-500 hover:underline" href="#">Saiba Mais</a></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-black/70 w-full h-64 py-8 px-48 space-y-8">
+
+        <p class="text-neutral-500">Dúvidas? Ligue <a class="text-neutral-500 hover:underline" href="#">0800 591 2876</a></p>
+
+        <div class="grid grid-cols-4 gap-4">
+
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Perguntas frequentes</a></div>
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Central de ajuda</a></div>
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Termos de uso</a></div>
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Privacidade</a></div>
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Preferências de cookies</a></div>
+          <div><a class="text-sm text-neutral-500 hover:underline" href="#">Informações corporativas</a></div>
+
+        </div>
+
+        <div>
+          <select class=" text-neutral-500 bg-transparent border border-neutral-400/50 px-2 py-3" name="" id="">
+            <option value="">Português</option>
+            <option value="">Inglês</option>
+          </select>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>
